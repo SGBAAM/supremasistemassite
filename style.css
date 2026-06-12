@@ -413,3 +413,44 @@ footer a:hover {
         right: 20px;
     }
 }
+
+/* ==================== EFEITO EXPANSÍVEL DOS CARDS ==================== */
+
+/* 1. Deixa o card com estilo de botão clicável */
+.card {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+/* 2. Esconde os detalhes por padrão */
+.card .card-detalhes {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+/* 3. Mostra os detalhes apenas quando o card for clicado (ganhar a classe .ativo) */
+.card.ativo .card-detalhes {
+    max-height: 800px; /* Espaço suficiente para o texto aparecer */
+    opacity: 1;
+    padding-top: 15px; /* Espaçamento interno elegante ao abrir */
+}
+
+/* 4. Alinhamento da seta no cabeçalho do card */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 5. Animação para a seta girar suavemente quando abrir */
+.card .seta {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.card.ativo .seta {
+    transform: rotate(180deg); /* Gira a seta para cima */
+}

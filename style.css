@@ -1,0 +1,356 @@
+:root{
+
+    --dark:#071A35;
+    --primary:#003A86;
+    --secondary:#005DB8;
+    --gold:#F4BE00;
+    --white:#FFFFFF;
+    --gray:#F5F7FA;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:#1e293b;
+}
+
+header{
+
+    position:fixed;
+    width:100%;
+    top:0;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.container{
+
+    max-width:1200px;
+    margin:auto;
+
+    padding:15px 25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+    height:80px;
+        width: auto;
+
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #071A35,
+        #003A86,
+        #005DB8
+    );
+
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:4rem;
+
+    margin:25px 0;
+
+    line-height:1.1;
+}
+
+.hero p{
+
+    color:#dbeafe;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:var(--dark);
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:12px;
+
+    font-weight:700;
+}
+
+.segmentos,
+.beneficios{
+
+    padding:100px 20px;
+}
+
+.container-column{
+
+    max-width:1200px;
+    margin:auto;
+}
+
+.container-column h2{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    color:var(--dark);
+
+    margin-bottom:50px;
+}
+
+.cards,
+.benefits-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.card,
+.benefit{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.card:hover,
+.benefit:hover{
+
+    transform:translateY(-5px);
+}
+
+.beneficios{
+    background:var(--gray);
+}
+
+.cta{
+
+    background:var(--dark);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+}
+
+.cta h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+}
+
+.cta p{
+
+    margin-bottom:40px;
+
+    font-size:1.1rem;
+}
+
+footer{
+
+    background:#020617;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .cta h2{
+        font-size:2rem;
+    }
+
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* MENU MOBILE */
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: var(--dark);
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background: #0f172a;
+        padding: 20px;
+        border-radius: 12px;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        z-index: 999;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu a {
+        padding: 5px 0;
+    }
+
+}
+
+

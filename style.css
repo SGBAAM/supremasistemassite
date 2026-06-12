@@ -454,3 +454,41 @@ footer a:hover {
 .card.ativo .seta {
     transform: rotate(180deg); /* Gira a seta para cima */
 }
+
+/* ==================== AJUSTE VISUAL DOS TEXTOS DOS CARDS ==================== */
+
+/* Garante um espaçamento confortável nas laterais internas do card */
+.card-detalhes {
+    padding: 0 24px 20px 24px; 
+}
+
+/* Deixa o título interno com destaque, mas sem gritar */
+.card-detalhes h4 {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #1a202c;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/* Alinha a lista à esquerda (essencial para leitura de tópicos) */
+.card-detalhes ul {
+    text-align: left;
+    padding-left: 20px; /* Dá o recuo necessário para os marcadores aparecerem */
+    margin: 0;
+    list-style-type: disc; /* Garante que os pontinhos fiquem visíveis */
+}
+
+/* Cuida do espaçamento e respiração de cada linha */
+.card-detalhes li {
+    font-size: 0.92rem;
+    line-height: 1.6;    /* Aumenta o espaço entre as linhas de um mesmo texto */
+    margin-bottom: 10px; /* Separa minimamente um pontinho do outro */
+    color: #4a5568;      /* Um cinza escuro elegante que cansa menos os olhos */
+}
+
+/* Remove a margem do último item para o card fechar certinho */
+.card-detalhes li:last-child {
+    margin-bottom: 0;
+}

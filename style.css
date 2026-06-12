@@ -492,3 +492,40 @@ footer a:hover {
 .card-detalhes li:last-child {
     margin-bottom: 0;
 }
+
+/* ==================== FORMATAÇÃO DOS PONTINHOS E ESPAÇAMENTO ==================== */
+
+/* Ajusta o bloco de texto interno */
+.card-detalhes {
+    padding: 0 20px 20px 20px;
+}
+
+/* Formata o título do card */
+.card-detalhes h4 {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #1a202c;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Força os pontinhos a aparecerem e organiza o alinhamento */
+.card-detalhes ul {
+    list-style-type: disc !important; /* Garante que os pontinhos (bullets) apareçam */
+    padding-left: 22px;               /* Empurra a lista para dentro do card para o pontinho não ser cortado */
+    text-align: left;                 /* Alinha o texto à esquerda (essencial para leitura de tópicos) */
+    margin: 0;
+}
+
+/* Cuida do espaçamento e da leitura agradável */
+.card-detalhes li {
+    font-size: 0.92rem;
+    line-height: 1.6;    /* Dá um espaço excelente entre as linhas de um mesmo texto */
+    margin-bottom: 12px; /* Separa um pontinho do outro de forma bem sutil e elegante */
+    color: #4a5568;      /* Um cinza escuro profissional que cansa menos os olhos */
+}
+
+/* Remove o espaço sob o último pontinho para o card fechar certinho */
+.card-detalhes li:last-child {
+    margin-bottom: 0;
+}

@@ -334,12 +334,19 @@ footer a:hover {
         position: absolute;
         top: 90px;
         right: 20px;
-        background: #0f172a;
+
+        background: white;
+        border: 1px solid #e5e7eb;
+
         padding: 20px;
+
         border-radius: 12px;
+
         flex-direction: column;
         gap: 15px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
         z-index: 999;
     }
 
@@ -348,6 +355,9 @@ footer a:hover {
     }
 
     #nav-menu a {
+        color: var(--dark);
+        font-weight: 600;
+        text-decoration: none;
         padding: 5px 0;
     }
 

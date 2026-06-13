@@ -529,3 +529,69 @@ footer a:hover {
 .card-detalhes li:last-child {
     margin-bottom: 0;
 }
+
+    
+
+/* ==================== SEÇÃO INTEGRAÇÕES ==================== */
+.integracoes {
+    padding: 80px 20px;
+    background-color: #f8fafc; /* Um fundo levemente acinzentado para destacar */
+    text-align: center;
+}
+
+.subtitulo-integracoes {
+    color: #64748b;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.integracoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.integracao-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease;
+}
+
+.integracao-card:hover {
+    transform: translateY(-5px);
+}
+
+.integracao-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.integracao-card h3 {
+    font-size: 1.25rem;
+    color: #1e293b;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.integracao-card p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.marcas-tags {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0284c7; /* Azul destacando as marcas homologadas */
+    background: #f0f9ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
